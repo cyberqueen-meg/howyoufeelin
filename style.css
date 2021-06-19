@@ -1,0 +1,40 @@
+body {
+  font-family: "", monospace;
+  text-align: center;
+}
+.ui-btn {
+    border: black solid 1px;
+    padding: 30px;
+    border-radius: 3px;
+    font-size: 25px;
+    font-family: "Josefin Sans", monospace;
+    text-align: center;
+}
+div[data-role="main"] {
+    padding: 50px;
+    border:black double 2px ;
+}
+
+.ui-content {
+    text-align: center;
+}
+.challenge-page {
+    text-align: center;
+}
+
+body {
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Cabin Sketch', cursive;
+}
+
+h1 {
+    font-family: "Cabin Sketch", monospace;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
