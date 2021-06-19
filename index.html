@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+<script type="text/javascript" src="howYouFeeling.js"></script>		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+
+			<!-- Include jQuery Mobile stylesheets -->
+			<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+			<!-- Include the jQuery library -->
+			<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+			<!-- Include the jQuery Mobile library -->
+			<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+			<!-- Erica's css and fonts -->
+			<link rel = "stylesheet" type= "text/css" href = "style.css">
+				<link href="https://fonts.googleapis.com/css?family=Anton|Cabin+Sketch|Josefin+Sans" rel="stylesheet">
+
+					<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+
+					<!-- Include our own custom Javascript -->
+					<script src="howYouFeeling.js"></script>
+
+				</head>
+
+				<body>
+
+					<!-- This page is just for during development to quickly navigate to the page you are working on.  -->
+
+					<!-- <div data-role="page" id="developerLanding">
+            <div data-role="header">
+                	<h1></h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                 <a href="#chooseFeelings" data-transition="slide" data-direction="slideup" class="ui-btn">Choose feeling(s)</a>
+                 <a href="#chooseQuoteOrChallenge" data-transition="slide" data-direction="slideup" class="ui-btn">Choose a Quote or a Challenge</a>
+                 <a href="#gotChallenge" data-transition="slide" data-direction="slideup" class="ui-btn" id="challengelanding">Get a challenge</a>
+                 <a href="#gotQuote" data-transition="slide" data-direction="slideup" class="ui-btn" id="quotelanding">Get a quote</a>
+                 <a href="#insertQuote" data-transition="slide" data-direction="slideup" class="ui-btn" id="quotelanding">Insert quote into Database</a>
+                 <a href="#EricasSpecialPage" data-transition="slide" data-direction="slideup" class="ui-btn">Erica's Special Page</a>
+            </div>
+            <div data-role="footer">
+                	<h1></h1>
+            </div>
+        </div>
+        
+-->	            <div data-role="page" id="chooseQuoteOrChallenge">
+						<div data-role="header">
+						</div>
+						<div id = "choose-page" data-role="main" class="ui-content">
+						    <h1 style= "font-size: 80px; color:#ad42f4">How YOU Feelin'</h1>
+							<a href="#gotChallenge" data-transition="slide" data-direction="slideup" class="ui-btn" id="challengelanding" style ="color:#3500d3">Get a challenge</a>
+							<p>Get a challenge that you can achieve in a day or week.</p>
+							<a href="#chooseFeelings" data-transition="slide" data-direction="slideup" class="ui-btn" style = "color: #2f2fa2" id = "quotelanding">Choose a Feeling</a>
+							<p>Choose a feeling and then get a quote based off of that feeling!</p>
+							
+							<br><br>
+							<a href="#about" data-transition="slide" data-direction="slideup" class="ui-btn" style = "color: #5c37b2" id = "quotelanding">About Us</a>
+					<br>
+					<p style = "color: #2f2fa2;">&copy;Created by Erica Garay, Bianca Halcomb, Neyvada Serio, Megan Howell, Ally Schaffer, and Alexandra Park</p>
+						</div>
+					</div>
+					<!-- ****************************************** -->
+					<!-- Feelings Page -->
+
+					<div data-role="page" id="chooseFeelings">
+						<div data-role="header">
+							<h1></h1>
+						</div>
+						<div data-role="main" class="ui-content">
+							<h1  style = "color: #97caef">How are you feeling today? </h1>
+							<div data-role="controlgroup" data-type="horizontal">
+
+								<a href="#gotQuote" id="J1" class="ui-btn" style = "color: #2e9cca">Joyful</a>
+								<a href="#gotQuote" id="S2" class="ui-btn" style = "color: #085dcb">Sad</a>
+								<a href="#gotQuote" id="Ang3" class="ui-btn" style = "color: #2e9cca">Angry</a>
+								<a href="#gotQuote" id="C4" class="ui-btn" style = "color: #085dcb">Confused</a>
+								<a href="#gotQuote" id="F5" class="ui-btn" style = "color: #2e9cca">Fearful</a>
+								<a href="#gotQuote" id="Anx6" class="ui-btn" style = "color: #085dcb">Anxious</a>
+								<a href="#gotQuote" id="D7" class="ui-btn" style = "color: #2e9cca">Disgusted</a>
+								<a href="#gotQuote" id="E8" class="ui-btn" style = "color: #085dcb">Jealous</a>
+								<a href="#gotQuote" id="P9" class="ui-btn" style = "color: #2e9cca">Peaceful</a>
+							</div>
+
+							<!-- the feelings -->
+						</div>
+						<div data-role="footer">
+							<h1></h1>
+
+
+						</div>
+					</div>
+
+					<!-- Feelings Page -->
+					<!-- ******************************************* -->
+					<!--Erica's Stuff-->
+        	<div data-role="page" id="about">
+						<div data-role="header">
+
+						</div>
+						<div id = "about-page" data-role="main" class="ui-content">
+							<h1 style= "color: #582aed">About Us</h1>
+							
+							<p style = "color: #2f2fa2">“How You Feelin’” is a Girls Who Code project created by girls in seventh and eighth grade at Explorer Middle School. The project seeks to help encourage and support students with uplifting quotes and challenges compelling the user to go out of their comfort zone. <br><br>
+
+Over the course of two years, we had to work as a team and combine all of our ideas and individual skills in order to make this program possible. We found it really important for everyone to be kind to one another and find happiness themselves, especially in such a difficult time period in one’s life, and we hope this program can help fellow grade schoolers.
+</p>
+<a href="#chooseQuoteOrChallenge" id="buttonBack" class="ui-btn"style = "color: #2f2fa2">Done</a>
+							</div>
+						</div>
+
+				
+
+					<!--Erica's Stuff-->
+					<!-- *********************************************** -->
+					<!-- Challenge Page -->
+
+					<div data-role="page" id="gotChallenge">
+						<div data-role="header">
+
+						</div>
+						<div id = "challenge-page" data-role="main" class="ui-content">
+							<h1 style = "color: #2f2fa2">Your Challenge is to:</h1> 
+							<!-- this line does not change -->
+
+							<div class="challenge">
+								<p id="challengeDescription" style = "color: #3500d3"></p>
+								<img onclick = "callChallenge()" src="refresh.png" alt = "refresh button" width = "50px" >
+								</div> 
+								<div>
+
+									<p style = "color: #2f2fa2">Make sure you complete or write down the challenge before clicking "Done"!</p>
+									<!-- this line does not change -->
+
+									<a href="#chooseQuoteOrChallenge" id="buttonBack" class="ui-btn"style = "color: #2f2fa2">Done</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Challenge Page  -->
+						<!-- ******************************************************************************************* -->
+						<!-- Quotes Page -->
+						<div data-role="page" id="gotQuote">
+							<div data-role="header"></div>
+							<div data-role="main" class="ui-content">
+								<!-- Centers text and writes the text for going back, quotes, and the message " You received a quote" -->
+								<!-- <a href="#gotQuote" class="ui-btn"></a> -->
+								<h1 id = "received" style = "color: #97caef"></h1>
+								<div class="quote">
+									<p id= "data" style = "color:#3500d3">Hello</p>
+									<p id="quoteDescription" style= "color: #2e9cca"></p>
+										<!-- <script>receiveQuote();</script> -->
+									</div> 
+									<!-- <script>
+                function receiveQuote() {
+                var quoteName = 1
+                alert(quoteName);    
+                
+                }
+            </script>  
+           -->         
+
+
+									<a href="#chooseFeelings" id="buttonBack" class="ui-btn" style = "color: #2f2fa2">Back to Feelings</a>
+									<a href="#chooseQuoteOrChallenge" id="buttonBack" class="ui-btn">Done</a>
+									<!-- <div data-role="footer">
+                    </div> -->
+								</div>
+							</div>
+
+
+
+							<!-- Quotes Page -->
+							<!-- ******************************************** -->
+
+						</body>
+					</html>
